@@ -1,0 +1,40 @@
+.navigator {
+  position: fixed;
+  top:50%;
+  transform: translateY(-50%);
+  right: $_20;
+  ul {
+    padding: 0;
+  }
+
+  li {
+    margin: $_14 0;
+    list-style: none;
+    text-align: center;
+    width: 100%;
+    &.active {
+      a {
+        width: $_12;
+        height: $_12;
+        background-color: $orange;
+      }
+    }
+
+  }
+
+  a {
+    display: block;
+    margin: 0 auto;
+    width: $_10;
+    height: $_10;
+    background-color:#D0D0D0;
+    border-radius: 50%;
+    transition: background 200ms ease, transform 200ms ease;
+    &:hover {
+      background-color: $orange;
+      transform: scale(1.01);
+    }
+
+  }
+
+}

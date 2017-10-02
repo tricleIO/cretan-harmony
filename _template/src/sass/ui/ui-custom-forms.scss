@@ -1,0 +1,27 @@
+.custom-input {
+  position: relative;
+
+  button {
+    position: absolute;
+    right:$_20;
+    top:50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    box-shadow: none;
+    text-shadow: none;
+    border:none;
+
+    img {
+      position: relative;
+      transition:all .4s ease;
+      left:0;
+    }
+
+    &:hover {
+      cursor: pointer;
+      img {
+        left:$_5;
+      }
+    }
+  }
+}

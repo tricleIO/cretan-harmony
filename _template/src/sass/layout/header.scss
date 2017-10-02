@@ -1,0 +1,15 @@
+.header {
+  position: absolute;
+  top:0;
+  left: 0;
+  right: 0;
+  padding-top: $_20;
+  @include media-breakpoint-up(md) {
+    padding-top: $_65;
+  }
+
+  &__logo {
+    margin-left: $_75;
+  }
+
+}

@@ -1,0 +1,91 @@
+.backgroud {
+  position: relative;
+  left: 0px;
+  top: 0px;
+  z-index: 998;
+  height: 100%;
+  overflow: hidden;
+  picture {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+
+  &__image {
+    position: relative;
+    &--center {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+  }
+
+}
+
+.heading {
+  font-size: $_40;
+  font-weight: bold;
+  &--white {
+    color: $white;
+  }
+
+  &--subtitle {
+    font-size: $_30;
+    font-weight: 400;
+
+    span {}
+
+  }
+
+  &__perex {
+    line-height: $_32;
+    font-size: $font-size-base;
+  }
+
+  &--big {
+    font-size: $_45+$_3;
+  }
+
+  &--small {
+    font-size: $_24;
+    letter-spacing: $_1;
+  }
+
+  &--icon {
+    position: relative;
+    svg {
+      position: absolute;
+      bottom:0;
+      left:0;
+    }
+  }
+
+}
+
+.ff-merri {
+  font-family: $font-family-merriweather;
+}
+
+.ff-lora {
+  font-family: $font-family-lora;
+}
+
+.line-95 {
+  line-height: $_95;
+}
+
+.animated-slow {
+  animation-duration: 2s;
+}
+
+.side-image {
+  position: absolute;
+  top:50%;
+  transform: translate(-50%,-50%);
+  left: 0;
+}
+.w-65 {
+  width: 65%;
+}
