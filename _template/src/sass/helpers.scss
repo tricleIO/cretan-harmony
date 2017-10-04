@@ -72,8 +72,15 @@
   font-family: $font-family-lora;
 }
 
+.ff-raleway {
+  font-family: $font-family-base;
+}
+
 .line-95 {
   line-height: $_95;
+}
+.line-32 {
+  line-height: $_32;
 }
 
 .animated-slow {
@@ -88,4 +95,8 @@
 }
 .w-65 {
   width: 65%;
+}
+
+.ls-1 {
+  letter-spacing: 1px;
 }

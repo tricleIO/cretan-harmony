@@ -8,6 +8,10 @@
     padding-top: $_65;
   }
 
+  &__menu:hover {
+    cursor: pointer;
+  }
+
   &__logo {
     margin-left: $_75;
   }

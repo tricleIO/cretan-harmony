@@ -1,0 +1,48 @@
+.author {
+  color: $white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__wrapper {
+    display: flex;
+    align-items: center;
+  }
+  &__content {
+    margin-left: $_15;
+  }
+
+  &__name {
+    font-size: $_16;
+  }
+
+  &__location {
+    opacity: .46;
+    display: flex;
+    align-items: center;
+    font-size: $_14;
+    &:before {
+      display: block;
+      content: '';
+      width: $_40;
+      height: 1px;
+      background-color: $orange;
+      margin-right: $_10;
+    }
+  }
+
+  a {
+    opacity: .46;
+    transition: opacity 200ms ease;
+    svg {
+      transition: transform 200ms ease;
+    }
+    &:hover {
+      opacity:.76;
+      svg {
+        transform: translateX($_10);
+      }
+    }
+  }
+
+
+}

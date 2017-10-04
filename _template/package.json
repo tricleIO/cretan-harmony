@@ -44,7 +44,7 @@
     "animate.css": "^3.5.2",
     "bootstrap": "^4.0.0-beta",
     "swiper": "^4.0.0-beta.1",
-    "vue": "^2.4.4",
+    "vue": "2.3.4",
     "vue-fullpage": "^2.0.5"
   }
 }

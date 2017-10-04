@@ -89,7 +89,7 @@ let defaultConfig = {
     },
 
     output: {
-        publicPath: '/',
+        publicPath: '',
         filename: '[name].js',
         path: path.join(__dirname, '/dist/')
     },

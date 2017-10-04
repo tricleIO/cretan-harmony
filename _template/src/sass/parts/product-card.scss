@@ -1,0 +1,119 @@
+.product-card {
+  position: relative;
+  height: 100%;
+  z-index: 10;
+  transition: box-shadow 200ms ease;
+  &:hover {
+    cursor: pointer;
+    box-shadow: 0 0 24px 4px rgba(0,0,0,0.04);
+    .img-wrapper {
+      transform:translateY(-12px);
+    }
+
+    .product-card__wrapper {
+      background-color: $white;
+    }
+
+    .product-card__link {
+      transform: translateY(100%);
+      opacity: 1;
+    }
+  }
+
+  .img-wrapper {
+    position: relative;
+    transition: transform 300ms ease;
+  }
+
+  &__container {
+    margin-top: $_100;
+    margin-bottom: $_100;
+  }
+
+  &__wrapper {
+    height: inherit;
+    border: 1px solid #E8E8E8;
+    position: relative;
+    background-color: #fafafa;
+    padding: $_32 $_24 $_45 $_32;
+    z-index: 9;
+    transition:background-color 300ms ease;
+  }
+
+  &__head {
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-36%);
+  }
+
+  &__info {
+    span {
+      display: block;
+      text-align: right;
+      color: #504746;
+    }
+    .inner {
+      padding-top: $_20;
+      transform: translateY(36%);
+    }
+    hr {
+      height: $_10;
+      width: 1px;
+      background-color: $orange;
+      margin-right: $_4;
+    }
+  }
+
+  &__title {
+    display: flex;
+    flex-direction: column;
+    font-size: $_24;
+    &:before {
+      width: $_40;
+      height: 1px;
+      background-color: $orange;
+      content: '';
+      margin-bottom: $_22;
+    }
+  }
+
+  &__price {
+    color: #504746;
+    letter-spacing: 1px;
+    i {
+      font-style: normal;
+      font-size: $_24;
+      color: $orange;
+    }
+  }
+
+
+  &__link {
+    display: block;
+    background-color: $white!important;
+    padding-top: $_30;
+    padding-right: $_24;
+    padding-bottom: $_30;
+    padding-left: $_40;
+    position: absolute;
+    left:0;
+    right: 0;
+    bottom:0;
+    width: 100%;
+    border-bottom:1px solid #E8E8E8;
+    border-left:1px solid #E8E8E8;
+    border-right:1px solid #E8E8E8;
+    z-index: 1;
+    transition: transform 200ms ease;
+    span {
+      transition: color 200ms ease;
+    }
+    &:hover span {
+      color: $orange;
+    }
+  }
+
+
+
+
+}

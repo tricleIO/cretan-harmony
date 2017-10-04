@@ -1,0 +1,14 @@
+.blockquote-autor {
+  position: relative;
+  line-height: $_40;
+  color: rgba($white,.76);
+  &:before {
+    content: '“';
+    position: absolute;
+    left: -$_100 - $_10;
+    top: -$_65;
+    font-size: $_160*2;
+    color:rgba(255,255,255,0.12);
+    line-height: 1;
+  }
+}
