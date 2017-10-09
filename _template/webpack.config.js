@@ -100,7 +100,7 @@ let defaultConfig = {
             path.join(__dirname, 'node_modules')
         ],
         alias: {
-            "jquery": "jquery-1/dist/jquery.js",
+            "jquery": "jquery",
             'vue$': 'vue/dist/vue.common.js'
         }
     },

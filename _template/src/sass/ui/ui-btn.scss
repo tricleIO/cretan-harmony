@@ -19,6 +19,21 @@
     color: $black;
   }
 
+  &--outline {
+    border:1px solid $orange;
+    display: flex;
+    align-items: center;
+    padding: $_24 $_45;
+    transition: background-color 300ms ease;
+    &:hover {
+      background-color: $orange;
+      color: $white;
+      .arrow-color {
+        stroke: $white;
+      }
+    }
+  }
+
   span {padding-left: $_16;}
 
 }

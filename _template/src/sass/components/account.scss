@@ -1,0 +1,18 @@
+.account {
+  overflow-y: hidden;
+
+  &-bg {
+    position: relative;
+    .img-wrapper {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
+  }
+  &__action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+}

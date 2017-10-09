@@ -6,10 +6,11 @@
 @import "~animate.css/animate.css";
 
 @import "~bootstrap/scss/mixins";
-@import "~bootstrap/scss/print";
 @import "~bootstrap/scss/reboot";
+@import "~bootstrap/scss/print";
 @import "~bootstrap/scss/type";
 @import "~bootstrap/scss/images";
+@import "~bootstrap/scss/modal";
 @import "~bootstrap/scss/code";
 @import "~bootstrap/scss/grid";
 @import "~bootstrap/scss/tables";
@@ -38,12 +39,17 @@
 @import "parts/product-card";
 @import "parts/blockquote";
 @import "parts/author";
+@import "parts/benefits";
 
 @import "components/partners";
+@import "components/account";
+@import "components/product";
 
+@import "ui/animations";
 @import "ui/ui-socials";
 @import "ui/ui-custom-forms";
 @import "ui/ui-btn";
+@import "ui/ui-modal";
 @import "ui/ui-ul";
 
 @import "helpers";

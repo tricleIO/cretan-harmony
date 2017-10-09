@@ -10,8 +10,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "autoprefixer-loader": "^3.2.0",
     "autoprefixer": "^7.1.1",
+    "autoprefixer-loader": "^3.2.0",
     "babel": "^6.23.0",
     "babel-core": "^6.24.1",
     "babel-loader": "^7.0.0",
@@ -43,6 +43,7 @@
   "dependencies": {
     "animate.css": "^3.5.2",
     "bootstrap": "^4.0.0-beta",
+    "jquery": "^3.2.1",
     "swiper": "^4.0.0-beta.1",
     "vue": "2.3.4",
     "vue-fullpage": "^2.0.5"

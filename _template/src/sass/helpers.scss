@@ -52,6 +52,14 @@
     font-size: $_24;
     letter-spacing: $_1;
   }
+  &--smaller {
+    font-size: $_14;
+    letter-spacing: $_2;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-family: $font-family-base;
+    color: #5F5F5F;
+  }
 
   &--icon {
     position: relative;
@@ -59,6 +67,18 @@
       position: absolute;
       bottom:0;
       left:0;
+    }
+  }
+
+  &--subtitle-pre {
+    display: flex;
+    align-items: center;
+    &:before {
+      content: '';
+      width: $_40;
+      height: 1px;
+      background-color: $orange;
+      margin-right: $_20;
     }
   }
 
@@ -87,6 +107,10 @@
   animation-duration: 2s;
 }
 
+.no-border {
+  border:none;
+}
+
 .side-image {
   position: absolute;
   top:50%;
@@ -99,4 +123,15 @@
 
 .ls-1 {
   letter-spacing: 1px;
+}
+
+.half {
+  flex-basis: 50%;
+}
+
+.bg-black {
+  background-color: $black;
+}
+.border-right-1 {
+  border-right:1px solid #eee;
 }

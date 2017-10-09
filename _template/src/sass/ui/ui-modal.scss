@@ -1,0 +1,36 @@
+.modal {
+
+  &-content {
+    border-radius: 0;
+  }
+
+  .close {
+    background: none;
+    border: none;
+    outline: none;
+    appearance: none;
+    span {
+      font-size: $_60;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &-md {
+
+    .modal {
+
+      &-header {
+        padding-top: 0;
+      }
+
+      &-body {
+        padding: 0 $_100 $_60 $_100;
+      }
+
+    }
+
+  }
+
+}

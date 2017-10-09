@@ -3,25 +3,165 @@
 
   button {
     position: absolute;
-    right:$_20;
-    top:50%;
+    right: $_20;
+    top: 50%;
     transform: translateY(-50%);
     background-color: transparent;
     box-shadow: none;
     text-shadow: none;
-    border:none;
+    border: none;
 
     img {
       position: relative;
-      transition:all .4s ease;
-      left:0;
+      transition: all .4s ease;
+      left: 0;
     }
 
     &:hover {
       cursor: pointer;
       img {
-        left:$_5;
+        left: $_5;
       }
     }
   }
+}
+
+input[type="checkbox"] {
+  width: $_24;
+  height: $_24;
+  border: 1px solid #DADADA;
+  border-radius: 1px;
+  background-color: $white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  appearance: none;
+
+  &:before {
+    display: none;
+    content: '';
+    background-color: $orange;
+    width: $_12;
+    height: $_12;
+  }
+
+  &:hover, &:focus, &:active, &:checked {
+    outline: none;
+    cursor: pointer;
+  }
+
+  &:checked {
+    &:before {
+      display: block;
+      content: '';
+      animation: shrink-bounce 250ms ease backwards;
+    }
+  }
+
+  + i {
+    font-style: normal;
+    margin-left: $_10;
+  }
+
+}
+
+.form-label {
+  color: #5F5F5F;
+  font-size: $_14;
+  font-weight: 500;
+  letter-spacing: $_2;
+  text-transform: uppercase;
+  margin-bottom: $_17;
+}
+
+.custom-radio {
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin-bottom: $_16;
+  &:hover {
+    cursor: pointer;
+  }
+  .custom-control-description {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: $_24;
+    border: 1px solid #dadada;
+    border-radius: 1px;
+    transition: border 200ms ease;
+    span {
+      transition: color 200ms ease;
+    }
+
+    &.custom-radio-badge {
+      position: relative;
+      overflow: hidden;
+      padding: $_24 $_40;
+
+      &:before {
+        position:absolute;
+        display: block;
+        content: '';
+        width: $_100;
+        height: $_20;
+        background-color: $orange;
+        left: -$_30;
+        transform: rotateZ(-45deg);
+        top: $_3;
+      }
+
+      &.blue {
+        &:before {
+          background-color: #38415F;
+        }
+      }
+
+    }
+
+  }
+  input:checked + .custom-control-description {
+    border-color: $orange;
+    span {
+      color: $orange;
+    }
+  }
+
+}
+
+.form-counter {
+  display: flex;
+  align-items: center;
+  border: 1px solid #DADADA;
+  border-radius: 1px;
+  padding:$_8 $_24;
+
+  div {
+    font-size: $_30;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  input {
+    max-width: $_50;
+    border:none;
+    background-color: transparent;
+    text-align: center;
+
+    &:hover,&:focus, &:active {
+      outline:none;
+    }
+
+  }
+
+  input[type="number"]::-webkit-outer-spin-button,
+  input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
+
 }

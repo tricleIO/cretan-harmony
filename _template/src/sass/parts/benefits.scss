@@ -1,0 +1,18 @@
+.benefits {
+  display: flex;
+  justify-content: space-between;
+
+  .benefit {
+    text-align: center;
+    padding: $_24 0;
+    &__title {
+      color: #5F5F5F;
+      font-size: $_14;
+      font-weight: 300;
+      letter-spacing: $_2;
+      line-height: $_24;
+      text-transform: uppercase;
+    }
+  }
+
+}

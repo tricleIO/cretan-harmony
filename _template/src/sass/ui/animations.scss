@@ -1,0 +1,11 @@
+@keyframes shrink-bounce{
+  0%{
+    transform: scale(.1);
+  }
+  33%{
+    transform: scale(.85);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
