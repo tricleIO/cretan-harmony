@@ -38,11 +38,12 @@ input[type="checkbox"] {
   appearance: none;
 
   &:before {
-    display: none;
+    opacity: 0;
     content: '';
     background-color: $orange;
     width: $_12;
     height: $_12;
+    transition: opacity 100ms ease;
   }
 
   &:hover, &:focus, &:active, &:checked {
@@ -52,7 +53,7 @@ input[type="checkbox"] {
 
   &:checked {
     &:before {
-      display: block;
+      opacity: 1;
       content: '';
       animation: shrink-bounce 250ms ease backwards;
     }
@@ -100,7 +101,7 @@ input[type="checkbox"] {
       padding: $_24 $_40;
 
       &:before {
-        position:absolute;
+        position: absolute;
         display: block;
         content: '';
         width: $_100;
@@ -134,7 +135,7 @@ input[type="checkbox"] {
   align-items: center;
   border: 1px solid #DADADA;
   border-radius: 1px;
-  padding:$_8 $_24;
+  padding: $_8 $_24;
 
   div {
     font-size: $_30;
@@ -145,12 +146,12 @@ input[type="checkbox"] {
 
   input {
     max-width: $_50;
-    border:none;
+    border: none;
     background-color: transparent;
     text-align: center;
 
-    &:hover,&:focus, &:active {
-      outline:none;
+    &:hover, &:focus, &:active {
+      outline: none;
     }
 
   }
@@ -164,4 +165,40 @@ input[type="checkbox"] {
     -moz-appearance: textfield;
   }
 
+}
+
+.form-group {
+  label {
+    text-transform: uppercase;
+  }
+
+  //Validation
+  &.is-invalid {
+    position: relative;
+    input {
+      border: 1px solid $pink;
+    }
+    .invalid-feedback {
+      position: absolute;
+      background: $pink;
+      display: block;
+      width: 100%;
+      color: white;
+      padding: $_3 $_24;
+      margin-top: 0;
+      font-size: $_14;
+      border-bottom-left-radius: 2px;
+      border-bottom-right-radius: 2px;
+    }
+  }
+
+}
+
+//checkbox
+.checkbox {
+  &:hover {
+    label {
+      cursor: pointer;
+    }
+  }
 }
